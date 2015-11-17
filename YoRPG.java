@@ -82,8 +82,23 @@ public class YoRPG {
 		charChoice = in.readLine();
 	    }
 	    catch ( IOException e ) { }
-	    
-	    System.out.println(charChoice.about());
+
+	    if ( charChoice.equals("Warrior") ){
+		System.out.println(Warrior.about());
+	    }
+	    else if ( charChoice.equals("Mage") ){
+		System.out.println(Mage.about());
+	    }
+	    else if ( charChoice.equals("Rouge") ){
+		System.out.println(Rouge.about());
+	    }
+	    else if ( charChoice.equals("Brownbeard") ){
+		System.out.println(Brownbeard.about());
+	    }
+	    else if ( charChoice.equals("Brownbun") ){
+		System.out.println(Brownbun.about());
+	    }
+
 	    System.out.println();
 	    
 	    s = "Do you want to choose this character?\n";
