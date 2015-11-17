@@ -73,7 +73,7 @@ public class YoRPG {
 
 	boolean foo = true;
 	String charChoice = "";
-	
+	boolean valid = true;
 	while (foo){
 	    s = "What character type would you like to be? Type a character type shown below to learn about it: \n";
 	    s += "Warrior\tMage\tRouge\tBrownbeard\tBrownbun";
@@ -85,34 +85,44 @@ public class YoRPG {
 
 	    if ( charChoice.equals("Warrior") ){
 		System.out.println( (new Warrior("p")).about());
+		valid = true;
 	    }
 	    else if ( charChoice.equals("Mage") ){
 		System.out.println( (new Mage("p")).about());
+		valid = true;
 	    }
 	    else if ( charChoice.equals("Rouge") ){
 		System.out.println( (new Rouge("p")).about());
+		valid = true;
 	    }
 	    else if ( charChoice.equals("Brownbeard") ){
 		System.out.println( (new Brownbeard("p")).about());
+		valid = true;
 	    }
 	    else if ( charChoice.equals("Brownbun") ){
 		System.out.println( (new Brownbun("p")).about());
+		valid = true;
 	    }
-
+	    else {
+		System.out.println("\nInvalid Input (Cases and spelling matter.)\n");
+		valid = false;
+	    }
+	    
 	    System.out.println();
+	    if (valid) {
+		s = "Do you want to choose this character?\n";
+		s += "\t1: Yes!\n";
+		s += "\t2: Go back :(\n";
+		System.out.println(s);
 	    
-	    s = "Do you want to choose this character?\n";
-	    s += "\t1: Yes!\n";
-	    s += "\t2: Go back :(\n";
-	    System.out.println(s);
-	    
-	    int choice = 0;
-	    try {
-		choice = Integer.parseInt( in.readLine() );
-	    }
-	    catch ( IOException e ) { }
-	    if (choice == 1){
-		foo = false;		
+		int choice = 0;
+		try {
+		    choice = Integer.parseInt( in.readLine() );
+		}
+		catch ( IOException e ) { }
+		if (choice == 1){
+		    foo = false;		
+		}
 	    }
 	}
 	//instantiate the player's character
