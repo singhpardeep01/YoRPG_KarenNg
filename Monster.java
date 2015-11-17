@@ -18,5 +18,6 @@ public class Monster extends Character{
     }
     public String about() {
 	return "Slayer of the good.";
+    }
 }
 	
