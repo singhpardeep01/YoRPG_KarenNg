@@ -1,9 +1,9 @@
 //Team Karen Ng -- Pardeep Singh, Jack Schluger, Jessica Yang
 //APCS1 pd09
-//HW30 -- Ye Olde Role Playing Game, Expanded
-//11-14-2015
+//HW31 -- Ye Olde Role Playing Game, Unchained
+//11-16-2015
 
-public class Character {
+public abstract class Character {
 
     protected int health;
     protected int strength;
@@ -40,35 +40,11 @@ public class Character {
 	return 0;
     }
 
-    public void specialize() {
-	defense -= 20;
-	atkRating += .2;
-    }
+    public abstract void specialize();
+    
     //returns stats back to normal if you dont do a special attack
-    public void normalize() {
-	defense = 40;
-	atkRating = 0.4;
-    }
+    public abstract void normalize();
 
     //returns a String describing a Warrior, Monster, Mage, Rogue, etc
-    public static String about(String s){
-	if (s.equals("Warrior")){
-	    return "high strength with moderate health";
-	}
-	else if (s.equals("Mage")){
-	    return"high health with moderate strength";
-	}
-	else if (s.equals("Rouge")){
-	    return "high strength with moderately-high health";
-	}
-	else if (s.equals("Brownbeard")){
-	    return "one-hit k.o. with low defense";
-	}
-	else if (s.equals("Brownbun")){
-	    return "tank with low strength";
-	}
-	else {
-	    return "invalid";
-	}
-    }
+    public abstract String about(String s);
 }//end class character

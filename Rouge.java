@@ -1,7 +1,7 @@
 //Team Karen Ng -- Pardeep Singh, Jack Schluger, Jessica Yang
 //APCS1 pd09
-//HW30 -- Ye Olde Role Playing Game, Expanded
-//11-14-2015
+//HW31 -- Ye Olde Role Playing Game, Unchained
+//11-16-2015
 
 public class Rouge extends Character{
     //---------Constructors-------------------
@@ -12,7 +12,12 @@ public class Rouge extends Character{
 	defense = 40;
 	atkRating = 0.4;
     }
-
-
+    public void specialize() {
+    }
+    public void normalize() {
+    }
+    public String about() {
+    }
+   
 }
 	
