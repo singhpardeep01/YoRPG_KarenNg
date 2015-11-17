@@ -84,19 +84,19 @@ public class YoRPG {
 	    catch ( IOException e ) { }
 
 	    if ( charChoice.equals("Warrior") ){
-		System.out.println(Warrior.about());
+		System.out.println( (new Warrior("p")).about());
 	    }
 	    else if ( charChoice.equals("Mage") ){
-		System.out.println(Mage.about());
+		System.out.println( (new Mage("p")).about());
 	    }
 	    else if ( charChoice.equals("Rouge") ){
-		System.out.println(Rouge.about());
+		System.out.println( (new Rouge("p")).about());
 	    }
 	    else if ( charChoice.equals("Brownbeard") ){
-		System.out.println(Brownbeard.about());
+		System.out.println( (new Brownbeard("p")).about());
 	    }
 	    else if ( charChoice.equals("Brownbun") ){
-		System.out.println(Brownbun.about());
+		System.out.println( (new Brownbun("p")).about());
 	    }
 
 	    System.out.println();
@@ -131,7 +131,9 @@ public class YoRPG {
 	else if ( charChoice.equals("Brownbun") ){
 		pat = new Brownbun( name );
 	    }
-	s = "You are now a " + charChoice ;
+	s = "You are now a " + charChoice +":\t";
+	s += pat.about();
+	
 	System.out.println(s);
 	System.out.println();
     }//end newGame()
