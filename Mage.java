@@ -13,8 +13,12 @@ public class Mage extends Character{
 	atkRating = 0.4;
     }
     public void specialize() {
+	defense = 10;
+	atkRating = 0.8;
     }
     public void normalize() {
+	defense = 40;
+	atkRating = 0.4;
     }
     public String about() {
     }

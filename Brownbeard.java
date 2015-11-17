@@ -13,8 +13,12 @@ public class Brownbeard extends Character{
 	atkRating = 0.4;
     }
     public void specialize() {
+	defense = 40;
+	atkRating = 0.5;
     }
     public void normalize() {
+	defense = 20;
+	atkRating = 0.4;
     }
     public String about() {
     }

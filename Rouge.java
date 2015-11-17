@@ -13,8 +13,12 @@ public class Rouge extends Character{
 	atkRating = 0.4;
     }
     public void specialize() {
+	strength = 100;
+	defense = 50;
     }
     public void normalize() {
+	strength = 90;
+	defense = 40;
     }
     public String about() {
     }

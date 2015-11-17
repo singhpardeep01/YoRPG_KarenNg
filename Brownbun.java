@@ -13,8 +13,12 @@ public class Brownbun extends Character{
 	atkRating = 0.4;
     }
     public void specialize() {
+	defense = 50;
+	atkRating = 0.9;
     }
     public void normalize() {
+	defense = 100;
+	atkRating = 0.4;
     }
     public String about() {
     }
