@@ -83,7 +83,7 @@ public class YoRPG {
 	    }
 	    catch ( IOException e ) { }
 	    
-	    System.out.println(Character.about( charChoice ));
+	    System.out.println(charChoice.about());
 	    System.out.println();
 	    
 	    s = "Do you want to choose this character?\n";

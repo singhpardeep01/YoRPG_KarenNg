@@ -21,6 +21,7 @@ public class Mage extends Character{
 	atkRating = 0.4;
     }
     public String about() {
+	return "high health with moderate strength";
     }
 
 }

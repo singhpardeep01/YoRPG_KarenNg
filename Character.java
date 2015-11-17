@@ -46,5 +46,5 @@ public abstract class Character {
     public abstract void normalize();
 
     //returns a String describing a Warrior, Monster, Mage, Rogue, etc
-    public abstract String about(String s);
+    public abstract String about();
 }//end class character

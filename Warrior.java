@@ -21,6 +21,7 @@ public class Warrior extends Character{
 	atkRating = 0.4;
     }
     public String about() {
+	return "high strength with moderate health";
     }
 
 }

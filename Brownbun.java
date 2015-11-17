@@ -21,6 +21,7 @@ public class Brownbun extends Character{
 	atkRating = 0.4;
     }
     public String about() {
+	return "tank with low strength";
     }
 
 }

@@ -21,6 +21,7 @@ public class Brownbeard extends Character{
 	atkRating = 0.4;
     }
     public String about() {
+	return "one-hit K.O. with low defense";
     }
 }
 	

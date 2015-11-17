@@ -21,6 +21,7 @@ public class Rouge extends Character{
 	defense = 40;
     }
     public String about() {
+	return "high strength with moderately-high health";
     }
    
 }
